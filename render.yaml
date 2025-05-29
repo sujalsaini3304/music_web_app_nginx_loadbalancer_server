@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: music-web-app-nginx-load-balancer
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    region: oregon
+    autoDeploy: true
+    branch: main
